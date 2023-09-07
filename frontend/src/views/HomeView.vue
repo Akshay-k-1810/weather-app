@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="p-5">
     <SearchCity />
     <WeatherForecast />
   </div>
