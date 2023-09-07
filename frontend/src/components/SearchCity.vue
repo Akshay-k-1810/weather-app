@@ -4,7 +4,6 @@
     <GMapAutocomplete @place_changed="placeChanged" class="gmap-autocompolete"/>
 
     <div>You can also click a location on the map to view the weather forecast</div>
-    <!-- TODO add click event -->
     <GMapMap
       v-if="selectedPlace"
       class="gmap-class"
@@ -12,6 +11,7 @@
       :zoom="7"
       map-type-id="roadmap"
       ref="gmap"
+      @click="placeChanged"
     >
     </GMapMap>
   </div>
