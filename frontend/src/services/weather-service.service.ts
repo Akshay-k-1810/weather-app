@@ -13,8 +13,6 @@ export interface ForecastModel {
   }
 }
 export default class WeatherService {
-  constructor() {}
-
   getWeatherForecast(lat: number, lng: number): Promise<ForecastModel> {
     return backendApi.get('weather/forecast', {lat, lng});
   }
