@@ -11,7 +11,7 @@
         <span>{{ formatTime(forecastData.current_weather.time) }}</span>
       </div>
       <div class="flex justify-around p-10 items-center">
-        <div class="font-bold text-5xl">
+        <div data-test-id="temperature" class="font-bold text-5xl">
           {{ forecastData.current_weather.temperature }}°C /
           {{ temperatureInFahrenheit() }}°F
         </div>
